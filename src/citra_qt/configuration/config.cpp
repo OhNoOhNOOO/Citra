@@ -536,7 +536,6 @@ void Config::ReadMiscellaneousValues() {
     qt_config->beginGroup(QStringLiteral("Miscellaneous"));
 
     ReadBasicSetting(Settings::values.log_filter);
-    ReadBasicSetting(Settings::values.log_regex_filter);
     ReadBasicSetting(Settings::values.enable_gamemode);
 
     qt_config->endGroup();
@@ -1069,7 +1068,6 @@ void Config::SaveMiscellaneousValues() {
     qt_config->beginGroup(QStringLiteral("Miscellaneous"));
 
     WriteBasicSetting(Settings::values.log_filter);
-    WriteBasicSetting(Settings::values.log_regex_filter);
     WriteBasicSetting(Settings::values.enable_gamemode);
 
     qt_config->endGroup();
